@@ -11,7 +11,6 @@ export const getPDFReadableStream = async (user) => {
     },
   };
   const printer = new PdfPrinter(fonts);
-  console.log("img url", user.image);
   const encodedImg = await imageToBase64(user.image);
 
   const docDefinition = {
